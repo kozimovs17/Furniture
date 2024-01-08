@@ -233,7 +233,7 @@ arrows[1].addEventListener("click", () => {
         sx = -sofas.length + 1;
     }
 
-    sofaimgimg.style.transform = `translate(${sx * 1150}px, 0)`;
+    sofaimg.style.transform = `translate(${sx * 1150}px, 0)`;
     arrows[0].style.background = "#77d4b1";
     arrows[1].style.background = "#3B5D50";
 });
@@ -246,7 +246,7 @@ window.addEventListener("keydown", (e) => {
             sx = 0;
         }
 
-        sofaimgimg.style.transform = `translate(${sx * 1150}px, 0)`;
+        sofaimg.style.transform = `translate(${sx * 1150}px, 0)`;
         arrows[0].style.background = "#3B5D50";
         arrows[1].style.background = "#77d4b1";
     }
@@ -257,7 +257,7 @@ window.addEventListener("keydown", (e) => {
             sx = -sofas.length + 1;
         }
 
-        sofaimgimg.style.transform = `translate(${sx * 1150}px, 0)`;
+        sofaimg.style.transform = `translate(${sx * 1150}px, 0)`;
         arrows[0].style.background = "#77d4b1";
         arrows[1].style.background = "#3B5D50";
     }
