@@ -189,15 +189,17 @@ header nav ul a {
         background-color: #3B5D50;
         padding: 20px 50px;
         position: fixed;
-      }
-      header nav {
+    }
+
+    header nav {
         width: 330px;
         display: flex;
         align-items: center;
         gap: 200px;
         position: relative;
-      }
-      header nav ul {
+    }
+
+    header nav ul {
         width: 100%;
         display: none;
         flex-direction: column;
@@ -206,120 +208,139 @@ header nav ul a {
         top: 59px;
         background-color: rgba(59, 93, 80, 0.7882352941);
         z-index: 852;
-      }
-      header nav .navbar {
+    }
+
+    header nav .navbar {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 5px;
-      }
-      header nav .navbar div {
+    }
+
+    header nav .navbar div {
         width: 25px;
         height: 3px;
         background-color: #fff;
         border-radius: 15px;
-      }
-      header nav .navbarx {
+    }
+
+    header nav .navbarx {
         width: 25px;
         height: 0;
         display: none;
         align-items: center;
         justify-content: center;
         position: relative;
-      }
-      header nav .navbarx .navbarx-r {
+    }
+
+    header nav .navbarx .navbarx-r {
         width: 25px;
         height: 3px;
         background-color: #fff;
         position: absolute;
         transform: rotate(45deg);
         border-radius: 15px;
-      }
-      header nav .navbarx .navbarx-l {
+    }
+
+    header nav .navbarx .navbarx-l {
         width: 25px;
         height: 3px;
         background-color: #fff;
         position: absolute;
         transform: rotate(135deg);
         border-radius: 15px;
-      }
-      header .header-item {
+    }
+
+    header .header-item {
         width: 100%;
         display: flex;
         flex-direction: column-reverse;
-      }
-      header .header-item .header-info {
+    }
+
+    header .header-item .header-info {
         width: 330px;
         gap: 60px;
-      }
-      header .header-item .header-info h1 {
+    }
+
+    header .header-item .header-info h1 {
         font-size: 24px;
-      }
-      header .header-item .header-info .btns a {
+    }
+
+    header .header-item .header-info .btns a {
         padding: 7px 20px;
         font-size: 14px;
-      }
-      header .header-item .header-img {
+    }
+
+    header .header-item .header-img {
         width: 330px;
         position: relative;
         z-index: 1;
-      }
-      header .header-item .back {
+    }
+
+    header .header-item .back {
         width: 150px;
         position: absolute;
         top: 20px;
         right: -40px;
-      }
-      /*header-finish*/
+    }
 
-      .footer {
+    /*header-finish*/
+
+    .footer {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 50px 0 35px 0;
-      }
-      .footer .footer-item {
+    }
+
+    .footer .footer-item {
         width: 330px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
         position: relative;
-      }
-      .footer .footer-item .footer-img {
+    }
+
+    .footer .footer-item .footer-img {
         display: none;
-      }
-      .footer .footer-item .footer-info {
+    }
+
+    .footer .footer-item .footer-info {
         width: 360px;
         display: flex;
         flex-direction: column;
         gap: 19px;
-      }
-      .footer .footer-item .footer-info .footer-logo {
+    }
+
+    .footer .footer-item .footer-info .footer-logo {
         color: #000;
         font-family: "Inter";
         font-size: 32px;
         font-style: normal;
         font-weight: bolder;
         line-height: normal;
-      }
-      .footer .footer-item .footer-info p {
+    }
+
+    .footer .footer-item .footer-info p {
         color: #6A6A6A;
         font-family: "Inter";
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
         line-height: 24px;
-      }
-      .footer .footer-item .footer-info .footer-icons {
+    }
+
+    .footer .footer-item .footer-info .footer-icons {
         display: flex;
         align-items: center;
         gap: 11px;
         margin-top: 39px;
-      }
-      .footer .footer-item .footer-info .footer-icons a {
+    }
+
+    .footer .footer-item .footer-info .footer-icons a {
         width: 41px;
         height: 41px;
         display: flex;
@@ -327,15 +348,17 @@ header nav ul a {
         justify-content: center;
         border-radius: 50%;
         background-color: #D9D9D9;
-      }
-      .footer .footer-item .footer-links {
+    }
+
+    .footer .footer-item .footer-links {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
         list-style: none;
-      }
-      .footer .footer-item .footer-links a {
+    }
+
+    .footer .footer-item .footer-links a {
         text-decoration: none;
         color: #6A6A6A;
         font-family: "Inter";
@@ -343,16 +366,18 @@ header nav ul a {
         font-style: normal;
         font-weight: 400;
         line-height: 28px;
-      }
-      .footer .footer-item #footer-links1 {
+    }
+
+    .footer .footer-item #footer-links1 {
         position: absolute;
         top: 300px;
         left: 0;
-      }
-      .footer .footer-item #footer-links2 {
-        position: relative;
-        top: 45px;
-      }
+    }
+
+    .footer .footer-item #footer-links2 {
+        position: relative; 
+         top: 45px;
+    }
 }
 
 .blog {
@@ -411,7 +436,7 @@ header nav ul a {
     line-height: normal;
 }
 
-#table{
+#table {
     background-color: #D2D2D2;
 }
 
@@ -425,7 +450,7 @@ header nav ul a {
     gap: 20px;
 }
 
-.blog-tables h1{
+.blog-tables h1 {
     text-align: center;
     width: 100%;
     color: #2F2F2F;
@@ -446,7 +471,7 @@ header nav ul a {
     gap: 20px;
 }
 
-.blog-chairs h1{
+.blog-chairs h1 {
     text-align: center;
     width: 100%;
     color: #2F2F2F;
@@ -467,7 +492,7 @@ header nav ul a {
     gap: 20px;
 }
 
-.blog-sofas h1{
+.blog-sofas h1 {
     text-align: center;
     width: 100%;
     color: #2F2F2F;
@@ -488,7 +513,7 @@ header nav ul a {
     gap: 20px;
 }
 
-.blog-bed h1{
+.blog-bed h1 {
     text-align: center;
     width: 100%;
     color: #2F2F2F;
@@ -509,7 +534,7 @@ header nav ul a {
     gap: 20px;
 }
 
-.blog-mattresses h1{
+.blog-mattresses h1 {
     text-align: center;
     width: 100%;
     color: #2F2F2F;
@@ -530,7 +555,7 @@ header nav ul a {
     gap: 20px;
 }
 
-.blog-lamps h1{
+.blog-lamps h1 {
     text-align: center;
     width: 100%;
     color: #2F2F2F;
@@ -551,7 +576,7 @@ header nav ul a {
     gap: 20px;
 }
 
-.blog-armchairs h1{
+.blog-armchairs h1 {
     text-align: center;
     width: 100%;
     color: #2F2F2F;
@@ -572,7 +597,7 @@ header nav ul a {
     gap: 20px;
 }
 
-.blog-kitchens h1{
+.blog-kitchens h1 {
     text-align: center;
     width: 100%;
     color: #2F2F2F;
@@ -593,7 +618,7 @@ header nav ul a {
     gap: 20px;
 }
 
-.blog-cabinets h1{
+.blog-cabinets h1 {
     text-align: center;
     width: 100%;
     color: #2F2F2F;
@@ -614,7 +639,7 @@ header nav ul a {
     gap: 20px;
 }
 
-.blog-mirrors h1{
+.blog-mirrors h1 {
     text-align: center;
     width: 100%;
     color: #2F2F2F;
@@ -635,7 +660,7 @@ header nav ul a {
     gap: 20px;
 }
 
-.blog-tumby h1{
+.blog-tumby h1 {
     text-align: center;
     width: 100%;
     color: #2F2F2F;
@@ -656,7 +681,7 @@ header nav ul a {
     gap: 20px;
 }
 
-.blog-hangers h1{
+.blog-hangers h1 {
     text-align: center;
     width: 100%;
     color: #2F2F2F;
@@ -711,154 +736,154 @@ header nav ul a {
     color: #D2D2D2;
 }
 
-@media(max-width: 600px){
+@media(max-width: 600px) {
     .blog {
         width: 100%;
     }
-    
+
     .search {
         width: 330px;
         gap: 30px;
     }
-    
+
     .search-inp {
         padding: 13px 24px 13px 24px;
     }
 
-    .search-img{
+    .search-img {
         width: 100px;
     }
-    
+
     .blog-items {
         width: 330px;
         display: grid;
-        grid-template-columns: auto auto ;
+        grid-template-columns: auto auto;
         grid-template-rows: auto auto auto auto auto auto;
         gap: 20px;
     }
-    
+
     .blog-items a {
         padding: 4.66px 26px;
         font-size: 16px;
     }
-    
+
 
     .blog-tables {
         width: 330px;
     }
-    
-    .blog-tables h1{
+
+    .blog-tables h1 {
         font-size: 26px;
     }
-    
+
     .blog-chairs {
         width: 330px;
     }
-    
-    .blog-chairs h1{
+
+    .blog-chairs h1 {
         font-size: 26px;
     }
-    
+
     .blog-sofas {
         width: 330px;
     }
-    
-    .blog-sofas h1{
+
+    .blog-sofas h1 {
         font-size: 26px;
     }
-    
+
     .blog-bed {
         width: 330px;
     }
-    
-    .blog-bed h1{
+
+    .blog-bed h1 {
         font-size: 26px;
     }
-    
+
     .blog-mattresses {
         width: 330px;
     }
-    
-    .blog-mattresses h1{
+
+    .blog-mattresses h1 {
         font-size: 26px;
     }
-    
+
     .blog-lamps {
         width: 330px;
     }
-    
-    .blog-lamps h1{
+
+    .blog-lamps h1 {
         font-size: 26px;
     }
-    
+
     .blog-armchairs {
         width: 330px;
     }
-    
-    .blog-armchairs h1{
+
+    .blog-armchairs h1 {
         font-size: 26px;
     }
-    
+
     .blog-kitchens {
         width: 330px;
     }
-    
-    .blog-kitchens h1{
+
+    .blog-kitchens h1 {
         font-size: 26px;
     }
-    
+
     .blog-cabinets {
         width: 330px;
     }
-    
-    .blog-cabinets h1{
+
+    .blog-cabinets h1 {
         font-size: 26px;
     }
-    
+
     .blog-mirrors {
         width: 330px;
     }
-    
-    .blog-mirrors h1{
+
+    .blog-mirrors h1 {
         font-size: 26px;
     }
-    
+
     .blog-tumby {
         width: 330px;
     }
-    
-    .blog-tumby h1{
+
+    .blog-tumby h1 {
         font-size: 26px;
     }
-    
+
     .blog-hangers {
         width: 330px;
     }
-    
-    .blog-hangers h1{
+
+    .blog-hangers h1 {
         font-size: 26px;
     }
-    
+
     .tables {
         width: 330px;
         justify-content: center;
-    }    
-    
+    }
+
     .tables img {
         width: 145px;
         border: 1px solid red;
         height: 145px;
     }
-    
+
     .arrows {
         display: flex;
         align-items: center;
         gap: 50px;
     }
-    
+
     .arrows button {
         padding: 5px 10px;
-    transform: translate(0px, 0);
+        transform: translate(0px, 0);
 
     }
 }

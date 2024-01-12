@@ -1019,4 +1019,3 @@ furniitems.forEach((count) => {
         }
     })
 })
-
