@@ -586,6 +586,7 @@ section .recentblog .recentblog-frame .recentblog-info span {
   /*header-finish*/
   section {
     width: 100%;
+    overflow: hidden;
   }
   section .chooseus {
     width: 330px;
