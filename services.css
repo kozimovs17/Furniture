@@ -181,90 +181,202 @@ header nav ul a {
 
 @media (max-width: 600px) {
   header {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #3B5D50;
     padding: 20px 50px;
-  }
+    position: fixed;
+}
 
-  header nav {
+header nav {
+    width: 330px;
     display: flex;
     align-items: center;
-    gap: 250px;
+    gap: 200px;
     position: relative;
-  }
+}
 
-  header nav .logo {
-    color: #fff;
-    font-family: "Inter";
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  }
-
-  header nav ul {
+header nav ul {
     width: 100%;
     display: none;
     flex-direction: column;
     padding: 15px 50px;
     position: absolute;
     top: 59px;
-    background-color: aquamarine;
-  }
+    background-color: rgba(59, 93, 80, 0.7882352941);
+    z-index: 852;
+}
 
-  header nav ul a {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.7607843137);
-    font-family: "Inter";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  }
-
-  header nav .navbar {
+header nav .navbar {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 5px;
-  }
+}
 
-  header nav .navbar div {
+header nav .navbar div {
     width: 25px;
     height: 3px;
     background-color: #fff;
     border-radius: 15px;
-  }
+}
 
-  header nav .navbarx {
+header nav .navbarx {
     width: 25px;
     height: 0;
     display: none;
     align-items: center;
     justify-content: center;
     position: relative;
-  }
+}
 
-  header nav .navbarx .navbarx-r {
+header nav .navbarx .navbarx-r {
     width: 25px;
     height: 3px;
     background-color: #fff;
     position: absolute;
     transform: rotate(45deg);
     border-radius: 15px;
-  }
+}
 
-  header nav .navbarx .navbarx-l {
+header nav .navbarx .navbarx-l {
     width: 25px;
     height: 3px;
     background-color: #fff;
     position: absolute;
     transform: rotate(135deg);
     border-radius: 15px;
-  }
+}
+
+header .header-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+header .header-item .header-info {
+    width: 330px;
+    gap: 60px;
+}
+
+header .header-item .header-info h1 {
+    font-size: 24px;
+}
+
+header .header-item .header-info .btns a {
+    padding: 7px 20px;
+    font-size: 14px;
+}
+
+header .header-item .header-img {
+    width: 330px;
+    position: relative;
+    z-index: 1;
+}
+
+header .header-item .back {
+    width: 150px;
+    position: absolute;
+    top: 20px;
+    right: -40px;
+}
+
+/*header-finish*/
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0 35px 0;
+}
+
+.footer .footer-item {
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.footer .footer-item .footer-img {
+    display: none;
+}
+
+.footer .footer-item .footer-info {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+
+.footer .footer-item .footer-info .footer-logo {
+    color: #000;
+    font-family: "Inter";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: bolder;
+    line-height: normal;
+}
+
+.footer .footer-item .footer-info p {
+    color: #6A6A6A;
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.footer .footer-item .footer-info .footer-icons {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin-top: 39px;
+}
+
+.footer .footer-item .footer-info .footer-icons a {
+    width: 41px;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+}
+
+.footer .footer-item .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    list-style: none;
+}
+
+.footer .footer-item .footer-links a {
+    text-decoration: none;
+    color: #6A6A6A;
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.footer .footer-item #footer-links1 {
+    position: absolute;
+    top: 300px;
+    left: 0;
+}
+
+.footer .footer-item #footer-links2 {
+    position: relative; 
+     top: 45px;
+}
 }
 
 .services {
@@ -331,7 +443,6 @@ header nav ul a {
   flex-direction: column;
   align-items: flex-start;
   gap: 50px;
-  /* border: 1px solid red; */
   overflow: hidden;
 }
 
@@ -346,13 +457,316 @@ header nav ul a {
   line-height: 41px;
 }
 
-.services-furni-slide {
+#table{
+  background-color: #D2D2D2;
+}
+
+#services-furni-chairs{
+  display: none;
+}
+
+#services-furni-sofas{
+  display: none;
+}
+
+#services-furni-bed{
+  display: none;
+}
+
+#services-furni-mattresses{
+  display: none;
+}
+
+#services-furni-lamps{
+  display: none;
+}
+
+#services-furni-armchairs{
+  display: none;
+}
+
+#services-furni-kitchens{
+  display: none;
+}
+
+#services-furni-cabinets{
+  display: none;
+}
+
+#services-furni-mirrors{
+  display: none;
+}
+
+#services-furni-tumby{
+  display: none;
+}
+
+#services-furni-hangers{
+  display: none;
+}
+
+.slick-carousel{
+  width: 1150px;  
+}
+
+#slick-slide00{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 40px;
+}
+
+#slick-slide01{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 40px;
+}
+
+#slick-slide02{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 40px;
+}
+
+#slick-slide12{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 40px;
+}
+
+#slick-slide11{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 40px;
+}
+
+#slick-slide10{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 40px;
+}
+
+#slick-slide20{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 40px;
+}
+
+#slick-slide21{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 40px;
+}
+
+#slick-slide22{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 40px;
+}
+
+#slick-slide30{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 40px;
+}
+
+#slick-slide31{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 40px;
+}
+
+#slick-slide32{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 40px;
+}
+
+#slick-slide40{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 40px;
+}
+
+#slick-slide41{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 40px;
+}
+
+#slick-slide42{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 40px;
+}
+
+#slick-slide50{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 40px;
+}
+
+#slick-slide51{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 40px;
+}
+
+#slick-slide52{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 40px;
+}
+
+#slick-slide60{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 40px;
+}
+
+#slick-slide61{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 40px;
+}
+
+#slick-slide62{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 40px;
+}
+
+#slick-slide70{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 40px;
+}
+
+#slick-slide71{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 40px;
+}
+
+#slick-slide72{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 40px;
+}
+
+#slick-slide80{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 40px;
+}
+
+#slick-slide81{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 40px;
+}
+
+#slick-slide82{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 40px;
+}
+
+#slick-slide90{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 40px;
+}
+
+#slick-slide91{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 40px;
+}
+
+#slick-slide92{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 40px;
+}
+
+#slick-slide101{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 40px;
+}
+
+#slick-slide102{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 40px;
+}
+
+#slick-slide100{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 40px;
+}
+
+#slick-slide110{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 40px;
+}
+
+#slick-slide111{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 40px;
+}
+
+#slick-slide112{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 40px;
+}
+/* .services-furni-slide {
   min-width: 300%;
   display: flex;
   align-items: center;
   gap: 10px;
   transition: all 0.5s;
-}
+} */
 
 .services-furni-tables {
   width: 1150px;
@@ -511,136 +925,362 @@ header nav ul a {
   color: #D2D2D2;
 }
 
-/******************************table-finish**********************************/
-
-.services-furni-chairs {
-  width: 1150px;
-  display: none;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 50px;
-  /* border: 1px solid red; */
-  overflow: hidden;
+@media(max-width: 600px){
+  .services {
+    width: 100%;
+    gap: 55px;
+    margin-top: 80px;
+    overflow: hidden;
+  
+  }
+  
+  .search {
+    width: 330px;
+  }
+  
+  .search-inp {
+    padding: 13px 24px 13px 24px;
+  }
+  
+  .services-item {
+    width: 330px;
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto auto auto auto auto;
+    gap: 20px;
+  }
+  
+  .services-item a {
+    padding: 4.66px 26px;
+    font-size: 16px;
+  }
+  
+  /***************************************************************/
+  
+  .services-furni {
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .services-title {
+    font-size: 26px;
+  }
+  
+  .slick-carousel{
+    width: 330px;  
+  }
+  
+  #slick-slide00{
+    display: grid;
+    grid-template-columns: auto ;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    gap: 20px;
+  }
+  
+  #slick-slide01{
+    display: grid;
+    grid-template-columns: auto ;
+    grid-template-rows: auto auto auto  auto auto auto auto auto auto;
+    gap: 20px;
+  }
+  
+  #slick-slide02{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto  auto auto auto auto auto auto;
+    gap: 20px;
+  }
+  
+  #slick-slide12{
+    display: grid;
+    grid-template-columns: auto ;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    gap: 40px;
+  }
+  
+  #slick-slide11{
+    display: grid;
+    grid-template-columns: auto ;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    gap: 40px;
+  }
+  
+  #slick-slide10{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    gap: 40px;
+  }
+  
+  #slick-slide20{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    gap: 40px;
+  }
+  
+  #slick-slide21{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    gap: 40px;
+  }
+  
+  #slick-slide22{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    gap: 40px;
+  }
+  
+  #slick-slide30{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    gap: 40px;
+  }
+  
+  #slick-slide31{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    gap: 40px;
+  }
+  
+  #slick-slide32{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    gap: 40px;
+  }
+  
+  #slick-slide40{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    gap: 40px;
+  }
+  
+  #slick-slide41{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    gap: 40px;
+  }
+  
+  #slick-slide42{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    gap: 40px;
+  }
+  
+  #slick-slide50{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    gap: 40px;
+  }
+  
+  #slick-slide51{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    gap: 40px;
+  }
+  
+  #slick-slide52{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    gap: 40px;
+  }
+  
+  #slick-slide60{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    gap: 40px;
+  }
+  
+  #slick-slide61{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    gap: 40px;
+  }
+  
+  #slick-slide62{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    gap: 40px;
+  }
+  
+  #slick-slide70{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    gap: 40px;
+  }
+  
+  #slick-slide71{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    gap: 40px;
+  }
+  
+  #slick-slide72{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    gap: 40px;
+  }
+  
+  #slick-slide80{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    gap: 40px;
+  }
+  
+  #slick-slide81{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    gap: 40px;
+  }
+  
+  #slick-slide82{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    gap: 40px;
+  }
+  
+  #slick-slide90{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    gap: 40px;
+  }
+  
+  #slick-slide91{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    gap: 40px;
+  }
+  
+  #slick-slide92{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    gap: 40px;
+  }
+  
+  #slick-slide101{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    gap: 40px;
+  }
+  
+  #slick-slide102{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    gap: 40px;
+  }
+  
+  #slick-slide100{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    gap: 40px;
+  }
+  
+  #slick-slide110{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    gap: 40px;
+  }
+  
+  #slick-slide111{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    gap: 40px;
+  }
+  
+  #slick-slide112{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    gap: 40px;
+  }
+  /* .services-furni-slide {
+    min-width: 300%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.5s;
+  } */
+  
+  .services-furni-tables {
+    width: 330px;
+  }
+  
+  .services-furni-tables-card {
+    display: flex;
+    width: 330px;
+  }
+  
+  .services-furni-tables-card img {
+    width: 255px;
+    height: 280px;
+  }
+  
+  
+  .services-card-frame2 h2 {
+    font-size: 16px;
+  }
+  
+  .services-card-frame2 a {
+    font-size: 14px;
+  }  
+  .services-card-frame1 h2 {
+    font-size: 18px;
+  }
+  
+  .services-card-frame1 p {
+    font-size: 14px;
+  }
+  
+  .services-card-frame3 .color1 {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .services-card-frame3 .color2 {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .services-card-frame3 .color3 {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .services-card-frame3 .color4 {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .services-card-btn {
+    font-size: 15px;
+  }
 }
-
-/*****************************chairs-finish********************************/
-
-.services-furni-sofas{
-  width: 1150px;
-  display: none;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 50px;
-  /* border: 1px solid red; */
-  overflow: hidden;
-}
-
-/*****************************sofas-finish********************************/
-
-.services-furni-bed{
-  width: 1150px;
-  display: none;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 50px;
-  /* border: 1px solid red; */
-  overflow: hidden;
-}
-
-/*****************************bed-finish********************************/
-
-.services-furni-mattresses{
-  width: 1150px;
-  display: none;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 50px;
-  /* border: 1px solid red; */
-  overflow: hidden;
-}
-
-/*****************************mattresses-finish********************************/
-
-.services-furni-lamps{
-  width: 1150px;
-  display: none;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 50px;
-  /* border: 1px solid red; */
-  overflow: hidden;
-}
-
-/*****************************lamps-finish********************************/
-
-.services-furni-armchairs{
-  width: 1150px;
-  display: none;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 50px;
-  /* border: 1px solid red; */
-  overflow: hidden;
-}
-
-/*****************************armchairs-finish********************************/
-
-.services-furni-kitchens{
-  width: 1150px;
-  display: none;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 50px;
-  /* border: 1px solid red; */
-  overflow: hidden;
-}
-
-/*****************************kitchens-finish********************************/
-
-.services-furni-cabinets{
-  width: 1150px;
-  display: none;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 50px;
-  /* border: 1px solid red; */
-  overflow: hidden;
-}
-
-/*****************************cabinets-finish********************************/
-
-.services-furni-mirrors{
-  width: 1150px;
-  display: none;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 50px;
-  /* border: 1px solid red; */
-  overflow: hidden;
-}
-
-/*****************************mirrors-finish********************************/
-
-.services-furni-tumby{
-  width: 1150px;
-  display: none;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 50px;
-  /* border: 1px solid red; */
-  overflow: hidden;
-}
-
-/*****************************tumby-finish********************************/
-
-.services-furni-hangers{
-  width: 1150px;
-  display: none;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 50px;
-  /* border: 1px solid red; */
-  overflow: hidden;
-}
-
-/*****************************hangers-finish***********************lamps

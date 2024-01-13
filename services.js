@@ -81,18 +81,18 @@ a.forEach((item) => {
 })
 /**********************************************************************************/
 let furniitems = document.querySelectorAll(".furni-items");
-let blogtables = document.querySelector(".services-furni");
-let blogchairs = document.querySelector(".services-furni-chairs");
-let blogsofas = document.querySelector(".services-furni-sofas");
-let blogbed = document.querySelector(".services-furni-bed");
-let blogmattresses = document.querySelector(".services-furni-mattresses");
-let bloglamps = document.querySelector(".services-furni-lamps");
-let blogarmchairs = document.querySelector(".services-furni-armchairs");
-let blogkitchens = document.querySelector(".services-furni-kitchens");
-let blogcabinets = document.querySelector(".services-furni-cabinets");
-let blogmirrors = document.querySelector(".services-furni-mirrors");
-let blogtumby = document.querySelector(".services-furni-tumby");
-let bloghangers = document.querySelector(".services-furni-hangers");
+let blogtables = document.querySelector("#services-furni");
+let blogchairs = document.querySelector("#services-furni-chairs");
+let blogsofas = document.querySelector("#services-furni-sofas");
+let blogbed = document.querySelector("#services-furni-bed");
+let blogmattresses = document.querySelector("#services-furni-mattresses");
+let bloglamps = document.querySelector("#services-furni-lamps");
+let blogarmchairs = document.querySelector("#services-furni-armchairs");
+let blogkitchens = document.querySelector("#services-furni-kitchens");
+let blogcabinets = document.querySelector("#services-furni-cabinets");
+let blogmirrors = document.querySelector("#services-furni-mirrors");
+let blogtumby = document.querySelector("#services-furni-tumby");
+let bloghangers = document.querySelector("#services-furni-hangers");
 
 furniitems.forEach((count) => {
     count.addEventListener("click", () => {
@@ -410,606 +410,618 @@ furniitems.forEach((count) => {
             bloghangers.style.display = "flex";
         }
     })
-})
+});
+
+
+$(document).ready(function(){
+    $('.slick-carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        arrows: false
+    });
+  });
 /**************************************************************************/
 
-let tableimg = document.querySelector("#tables-images");
-let chairsimg = document.querySelector("#chairs-images");
-let sofaimg = document.querySelector("#sofa-images");
-let bedimg = document.querySelector("#bed-images");
-let mattressesimg = document.querySelector("#mattresses-images");
-let lampsimg = document.querySelector("#lamps-images");
-let armchairsimg = document.querySelector("#armchairs-images");
-let kitchensimg = document.querySelector("#kitchens-images");
-let cabinetsimg = document.querySelector("#cabinets-images");
-let mirrorsimg = document.querySelector("#mirrors-images");
-let tumbyimg = document.querySelector("#tumby-images");
-let hangersimg = document.querySelector("#hangers-images");
-let arrows = document.querySelectorAll("#arrow");
-let tables = document.querySelectorAll("#tables");
-let chairs = document.querySelectorAll("#chairs");
-let sofas = document.querySelectorAll("#sofas");
-let bed = document.querySelectorAll("#bed");
-let mattresses = document.querySelectorAll("#mattresses");
-let lamps = document.querySelectorAll("#lamps");
-let armchairs = document.querySelectorAll("#armchairs");
-let kitchens = document.querySelectorAll("#kitchens");
-let cabinets = document.querySelectorAll("#cabinets");
-let mirrors = document.querySelectorAll("#mirrors");
-let tumby = document.querySelectorAll("#tumby");
-let hangers = document.querySelectorAll("#hangers");
-let x = 0;
-let chx = 0;
-let sx = 0;
-let bx = 0;
-let mx = 0;
-let lx = 0;
-let ax = 0;
-let kx = 0;
-let cx = 0;
-let mix = 0;
-let tx = 0;
-let hx = 0;
-
-arrows[0].addEventListener("click", () => {
-    x++;
-    if (x > 0) {
-        x = 0;
-    }
-
-    tableimg.style.transform = `translate(${x * 1150}px, 0)`;
-    arrows[0].style.background = "#3B5D50";
-    arrows[1].style.background = "#77d4b1";
-});
-
-arrows[1].addEventListener("click", () => {
-    x--;
-    if (x < -tables.length + 1) {
-        x = -tables.length + 1;
-    }
-    tableimg.style.transform = `translate(${x * 1150}px, 0)`;
-    arrows[0].style.background = "#77d4b1";
-    arrows[1].style.background = "#3B5D50";
-
-});
-
-window.addEventListener("keydown", (e) => {
-    if (e.keyCode == 37) {
-        x++;
-        if (x > 0) {
-            x = 0;
-        }
-
-        tableimg.style.transform = `translate(${x * 1150}px, 0)`;
-        arrows[0].style.background = "#3B5D50";
-        arrows[1].style.background = "#77d4b1";
-    }
-
-    if (e.keyCode == 39) {
-        x--;
-        if (x < -tables.length + 1) {
-            x = -tables.length + 1;
-        }
-
-        tableimg.style.transform = `translate(${x * 1150}px, 0)`;
-        arrows[0].style.background = "#77d4b1";
-        arrows[1].style.background = "#3B5D50";
-    }
-});
-/*******************************table-finish**************************************/
-
-arrows[0].addEventListener("click", () => {
-    chx++;
-    if (chx > 0) {
-        chx = 0;
-    }
-
-    chairsimg.style.transform = `translate(${chx * 1150}px, 0)`;
-    arrows[0].style.background = "#3B5D50";
-    arrows[1].style.background = "#77d4b1";
-});
-
-arrows[1].addEventListener("click", () => {
-    chx--;
-    if (chx < -chairs.length + 1) {
-        chx = -chairs.length + 1;
-    }
-    chairsimg.style.transform = `translate(${chx * 1150}px, 0)`;
-    arrows[0].style.background = "#77d4b1";
-    arrows[1].style.background = "#3B5D50";
-});
-
-window.addEventListener("keydown", (e) => {
-    if (e.keyCode == 37) {
-        chx++;
-        if(chx > 0){
-            chx = 0;
-        }
-
-        chairsimg.style.transform = `translate(${chx * 1150}px, 0)`;
-        arrows[0].style.background = "#3B5D50";
-        arrows[1].style.background = "#77d4b1";
-    }
-
-    if(e.keyCode == 39){
-        chx--;
-        if(chx < -chairs.length + 1){
-            chx = -chairs.length + 1;
-        }
-
-        chairsimg.style.transform = `translate(${chx * 1150}px, 0)`;
-        arrows[0].style.background = "#77d4b1";
-        arrows[1].style.background = "#3B5D50";
-    }
-});
-/*****************************chairs-finish***********************************/
-
-arrows[0].addEventListener("click", () => {
-    sx++;
-    if (sx > 0) {
-        sx = 0;
-    }
-
-    sofaimg.style.transform = `translate(sx * 1150}px, 0)`;
-    arrows[0].style.background = "#3B5D50";
-    arrows[1].style.background = "#77d4b1";
-});
-
-arrows[1].addEventListener("click", () => {
-    sx--;
-    if (sx < -sofas.length + 1) {
-        sx = -sofas.length + 1;
-    }
-    sofaimg.style.transform = `translate(sx * 1150}px, 0)`;
-    arrows[0].style.background = "#77d4b1";
-    arrows[1].style.background = "#3B5D50";
-});
-
-window.addEventListener("keydown", (e) => {
-    if (e.keyCode == 37) {
-        sx++;
-        if(sx > 0){
-            sx = 0;
-        }
-
-        sofaimg.style.transform = `translate(${sx * 1150}px, 0)`;
-        arrows[0].style.background = "#3B5D50";
-        arrows[1].style.background = "#77d4b1";
-    }
-
-    if(e.keyCode == 39){
-        sx--;
-        if(sx < -sofas.length + 1){
-            sx = -sofas.length + 1;
-        }
-
-        sofaimg.style.transform = `translate(${sx * 1150}px, 0)`;
-        arrows[0].style.background = "#77d4b1";
-        arrows[1].style.background = "#3B5D50";
-    }
-});
-/*****************************sofas-finish***********************************/
-
-arrows[0].addEventListener("click", () => {
-    bx++;
-    if (bx > 0) {
-        bx = 0;
-    }
-
- bedimg.style.transform = `translate(${bx * 1150}px, 0)`;
-    arrows[0].style.background = "#3B5D50";
-    arrows[1].style.background = "#77d4b1";
-});
-
-arrows[1].addEventListener("click", () => {
-    bx--;
-    if (bx < -bed.length + 1) {
-        bx = -bed.length + 1;
-    }
-
- bedimg.style.transform = `translate(${bx * 1150}px, 0)`;
-    arrows[0].style.background = "#77d4b1";
-    arrows[1].style.background = "#3B5D50";
-});
-
-
-window.addEventListener("keydown", (e) => {
-    if (e.keyCode == 37) {
-        bx++;
-        if (bx > 0) {
-            bx = 0;
-        }
-
-     bedimg.style.transform = `translate(${bx * 1150}px, 0)`;
-        arrows[0].style.background = "#3B5D50";
-        arrows[1].style.background = "#77d4b1";
-    }
-
-    if (e.keyCode == 39) {
-        bx--;
-        if (bx < -bed.length + 1) {
-            bx = -bed.length + 1;
-        }
-
-     bedimg.style.transform = `translate(${bx * 1150}px, 0)`;
-        arrows[0].style.background = "#77d4b1";
-        arrows[1].style.background = "#3B5D50";
-    }
-});
-/***********************************bed-finish**************************************************/
-arrows[0].addEventListener("click", () => {
-    mx++;
-    if (mx > 0) {
-        mx = 0;
-    }
-
- mattressesimg.style.transform = `translate(${mx * 1150}px, 0)`;
-    arrows[0].style.background = "#3B5D50";
-    arrows[1].style.background = "#77d4b1";
-});
-
-arrows[1].addEventListener("click", () => {
-    mx--;
-    if (mx < -mattresses.length + 1) {
-        mx = -mattresses.length + 1;
-    }
-
- mattressesimg.style.transform = `translate(${mx * 1150}px, 0)`;
-    arrows[0].style.background = "#77d4b1";
-    arrows[1].style.background = "#3B5D50";
-});
-
-
-window.addEventListener("keydown", (e) => {
-    if (e.keyCode == 37) {
-        mx++;
-        if (mx > 0) {
-            mx = 0;
-        }
-
-     mattressesimg.style.transform = `translate(${mx * 1150}px, 0)`;
-        arrows[0].style.background = "#3B5D50";
-        arrows[1].style.background = "#77d4b1";
-    }
-
-    if (e.keyCode == 39) {
-        mx--;
-        if (mx < -mattresses.length + 1) {
-            mx = -mattresses.length + 1;
-        }
-
-     mattressesimg.style.transform = `translate(${mx * 1150}px, 0)`;
-        arrows[0].style.background = "#77d4b1";
-        arrows[1].style.background = "#3B5D50";
-    }
-});
-/************************************mattresses-finish*************************************************/
-arrows[0].addEventListener("click", () => {
-    lx++;
-    if (lx > 0) {
-        lx = 0;
-    }
-
-    lampsimg.style.transform = `translate(${lx * 1150}px, 0)`;
-    arrows[0].style.background = "#3B5D50";
-    arrows[1].style.background = "#77d4b1";
-});
-
-arrows[1].addEventListener("click", () => {
-    lx--;
-    if (lx < -lamps.length + 1) {
-        lx = -lamps.length + 1;
-    }
-
-    lampsimg.style.transform = `translate(${lx * 1150}px, 0)`;
-    arrows[0].style.background = "#77d4b1";
-    arrows[1].style.background = "#3B5D50";
-});
-
-
-window.addEventListener("keydown", (e) => {
-    if (e.keyCode == 37) {
-        lx++;
-        if (lx > 0) {
-            lx = 0;
-        }
-
-        lampsimg.style.transform = `translate(${lx * 1150}px, 0)`;
-        arrows[0].style.background = "#3B5D50";
-        arrows[1].style.background = "#77d4b1";
-    }
-
-    if (e.keyCode == 39) {
-        lx--;
-        if (lx < -lamps.length + 1) {
-            lx = -lamps.length + 1;
-        }
-
-        lampsimg.style.transform = `translate(${lx * 1150}px, 0)`;
-        arrows[0].style.background = "#77d4b1";
-        arrows[1].style.background = "#3B5D50";
-    }
-});
-/************************************lamps-finish*************************************************/
-arrows[0].addEventListener("click", () => {
-    ax++;
-    if (ax > 0) {
-        ax = 0;
-    }
-
-    armchairsimg.style.transform = `translate(${ax * 1150}px, 0)`;
-    arrows[0].style.background = "#3B5D50";
-    arrows[1].style.background = "#77d4b1";
-});
-
-arrows[1].addEventListener("click", () => {
-    ax--;
-    if (ax < -armchairs.length + 1) {
-        ax = -armchairs.length + 1;
-    }
-
-    armchairsimg.style.transform = `translate(${ax * 1150}px, 0)`;
-    arrows[0].style.background = "#77d4b1";
-    arrows[1].style.background = "#3B5D50";
-});
-
-
-window.addEventListener("keydown", (e) => {
-    if (e.keyCode == 37) {
-        ax++;
-        if (ax > 0) {
-            ax = 0;
-        }
-
-        armchairsimg.style.transform = `translate(${ax * 1150}px, 0)`;
-        arrows[0].style.background = "#3B5D50";
-        arrows[1].style.background = "#77d4b1";
-    }
-
-    if (e.keyCode == 39) {
-        ax--;
-        if (ax < -armchairs.length + 1) {
-            ax = -armchairs.length + 1;
-        }
-
-        armchairsimg.style.transform = `translate(${ax * 1150}px, 0)`;
-        arrows[0].style.background = "#77d4b1";
-        arrows[1].style.background = "#3B5D50";
-    }
-});
-/************************************armchairs-finish*************************************************/
-arrows[0].addEventListener("click", () => {
-    kx++;
-    if (kx > 0) {
-        kx = 0;
-    }
-
-    kitchensimg.style.transform = `translate(${kx * 1150}px, 0)`;
-    arrows[0].style.background = "#3B5D50";
-    arrows[1].style.background = "#77d4b1";
-});
-
-arrows[1].addEventListener("click", () => {
-    kx--;
-    if (kx < -kitchens.length + 1) {
-        kx = -kitchens.length + 1;
-    }
-
-    kitchensimg.style.transform = `translate(${kx * 1150}px, 0)`;
-    arrows[0].style.background = "#77d4b1";
-    arrows[1].style.background = "#3B5D50";
-});
-
-
-window.addEventListener("keydown", (e) => {
-    if (e.keyCode == 37) {
-        kx++;
-        if (kx > 0) {
-            kx = 0;
-        }
-
-        kitchensimg.style.transform = `translate(${kx * 1150}px, 0)`;
-        arrows[0].style.background = "#3B5D50";
-        arrows[1].style.background = "#77d4b1";
-    }
-
-    if (e.keyCode == 39) {
-        kx--;
-        if (kx < -kitchens.length + 1) {
-            kx = -kitchens.length + 1;
-        }
-
-        kitchensimg.style.transform = `translate(${kx * 1150}px, 0)`;
-        arrows[0].style.background = "#77d4b1";
-        arrows[1].style.background = "#3B5D50";
-    }
-});
-/************************************kitchens-finish*************************************************/
-arrows[0].addEventListener("click", () => {
-    cx++;
-    if (cx > 0) {
-        cx = 0;
-    }
-
-    cabinetsimg.style.transform = `translate(${cx * 1150}px, 0)`;
-    arrows[0].style.background = "#3B5D50";
-    arrows[1].style.background = "#77d4b1";
-});
-
-arrows[1].addEventListener("click", () => {
-    cx--;
-    if (cx < -cabinets.length + 1) {
-        cx = -cabinets.length + 1;
-    }
-
-    cabinetsimg.style.transform = `translate(${cx * 1150}px, 0)`;
-    arrows[0].style.background = "#77d4b1";
-    arrows[1].style.background = "#3B5D50";
-});
-
-
-window.addEventListener("keydown", (e) => {
-    if (e.keyCode == 37) {
-        cx++;
-        if (cx > 0) {
-            cx = 0;
-        }
-
-        cabinetsimg.style.transform = `translate(${cx * 1150}px, 0)`;
-        arrows[0].style.background = "#3B5D50";
-        arrows[1].style.background = "#77d4b1";
-    }
-
-    if (e.keyCode == 39) {
-        cx--;
-        if (cx < -cabinets.length + 1) {
-            cx = -cabinets.length + 1;
-        }
-
-        cabinetsimg.style.transform = `translate(${cx * 1150}px, 0)`;
-        arrows[0].style.background = "#77d4b1";
-        arrows[1].style.background = "#3B5D50";
-    }
-});
-/************************************cabinets-finish*************************************************/
-arrows[0].addEventListener("click", () => {
-    mix++;
-    if (mix > 0) {
-        mix = 0;
-    }
-
-    mirrorsimg.style.transform = `translate(${mix * 1150}px, 0)`;
-    arrows[0].style.background = "#3B5D50";
-    arrows[1].style.background = "#77d4b1";
-});
-
-arrows[1].addEventListener("click", () => {
-    mix--;
-    if (mix < -mirrors.length + 1) {
-        mix = -mirrors.length + 1;
-    }
-
-    mirrorsimg.style.transform = `translate(${mix * 1150}px, 0)`;
-    arrows[0].style.background = "#77d4b1";
-    arrows[1].style.background = "#3B5D50";
-});
-
-
-window.addEventListener("keydown", (e) => {
-    if (e.keyCode == 37) {
-        mix++;
-        if (mix > 0) {
-            mix = 0;
-        }
-
-        mirrorsimg.style.transform = `translate(${mix * 1150}px, 0)`;
-        arrows[0].style.background = "#3B5D50";
-        arrows[1].style.background = "#77d4b1";
-    }
-
-    if (e.keyCode == 39) {
-        mix--;
-        if (mix < -mirrors.length + 1) {
-            mix = -mirrors.length + 1;
-        }
-
-        mirrorsimg.style.transform = `translate(${mix * 1150}px, 0)`;
-        arrows[0].style.background = "#77d4b1";
-        arrows[1].style.background = "#3B5D50";
-    }
-});
-/************************************mirrors-finish*************************************************/
-arrows[0].addEventListener("click", () => {
-    tx++;
-    if (tx > 0) {
-        tx = 0;
-    }
-
-    tumbyimg.style.transform = `translate(${tx * 1150}px, 0)`;
-    arrows[0].style.background = "#3B5D50";
-    arrows[1].style.background = "#77d4b1";
-});
-
-arrows[1].addEventListener("click", () => {
-    tx--;
-    if (tx < -tumby.length + 1) {
-        tx = -tumby.length + 1;
-    }
-
-    tumbyimg.style.transform = `translate(${tx * 1150}px, 0)`;
-    arrows[0].style.background = "#77d4b1";
-    arrows[1].style.background = "#3B5D50";
-});
-
-
-window.addEventListener("keydown", (e) => {
-    if (e.keyCode == 37) {
-        tx++;
-        if (tx > 0) {
-            tx = 0;
-        }
-
-        tumbyimg.style.transform = `translate(${tx * 1150}px, 0)`;
-        arrows[0].style.background = "#3B5D50";
-        arrows[1].style.background = "#77d4b1";
-    }
-
-    if (e.keyCode == 39) {
-        tx--;
-        if (tx < -tumby.length + 1) {
-            tx = -tumby.length + 1;
-        }
-
-        tumbyimg.style.transform = `translate(${tx * 1150}px, 0)`;
-        arrows[0].style.background = "#77d4b1";
-        arrows[1].style.background = "#3B5D50";
-    }
-});
-/**********************************tumby-finish***************************************************/
-arrows[0].addEventListener("click", () => {
-    hx++;
-    if (hx > 0) {
-        hx = 0;
-    }
-
-    hangersimg.style.transform = `translate(${hx * 1150}px, 0)`;
-    arrows[0].style.background = "#3B5D50";
-    arrows[1].style.background = "#77d4b1";
-});
-
-arrows[1].addEventListener("click", () => {
-    hx--;
-    if (hx < -hangers.length + 1) {
-        hx = -hangers.length + 1;
-    }
-
-    hangersimg.style.transform = `translate(${hx * 1150}px, 0)`;
-    arrows[0].style.background = "#77d4b1";
-    arrows[1].style.background = "#3B5D50";
-});
-
-
-window.addEventListener("keydown", (e) => {
-    if (e.keyCode == 37) {
-        hx++;
-        if (hx > 0) {
-            hx = 0;
-        }
-
-        hangersimg.style.transform = `translate(${hx * 1150}px, 0)`;
-        arrows[0].style.background = "#3B5D50";
-        arrows[1].style.background = "#77d4b1";
-    }
-
-    if (e.keyCode == 39) {
-        hx--;
-        if (hx < -hangers.length + 1) {
-            hx = -hangers.length + 1;
-        }
-
-        hangersimg.style.transform = `translate(${hx * 1150}px, 0)`;
-        arrows[0].style.background = "#77d4b1";
-        arrows[1].style.background = "#3B5D50";
-    }
-});
+// let tableimg = document.querySelector("#tables-images");
+// let chairsimg = document.querySelector("#chairs-images");
+// let sofaimg = document.querySelector("#sofa-images");
+// let bedimg = document.querySelector("#bed-images");
+// let mattressesimg = document.querySelector("#mattresses-images");
+// let lampsimg = document.querySelector("#lamps-images");
+// let armchairsimg = document.querySelector("#armchairs-images");
+// let kitchensimg = document.querySelector("#kitchens-images");
+// let cabinetsimg = document.querySelector("#cabinets-images");
+// let mirrorsimg = document.querySelector("#mirrors-images");
+// let tumbyimg = document.querySelector("#tumby-images");
+// let hangersimg = document.querySelector("#hangers-images");
+// let arrows = document.querySelectorAll("#arrow");
+// let tables = document.querySelectorAll("#tables");
+// let chairs = document.querySelectorAll("#chairs");
+// let sofas = document.querySelectorAll("#sofas");
+// let bed = document.querySelectorAll("#bed");
+// let mattresses = document.querySelectorAll("#mattresses");
+// let lamps = document.querySelectorAll("#lamps");
+// let armchairs = document.querySelectorAll("#armchairs");
+// let kitchens = document.querySelectorAll("#kitchens");
+// let cabinets = document.querySelectorAll("#cabinets");
+// let mirrors = document.querySelectorAll("#mirrors");
+// let tumby = document.querySelectorAll("#tumby");
+// let hangers = document.querySelectorAll("#hangers");
+// let x = 0;
+// let chx = 0;
+// let sx = 0;
+// let bx = 0;
+// let mx = 0;
+// let lx = 0;
+// let ax = 0;
+// let kx = 0;
+// let cx = 0;
+// let mix = 0;
+// let tx = 0;
+// let hx = 0;
+
+// arrows[0].addEventListener("click", () => {
+//     x++;
+//     if (x > 0) {
+//         x = 0;
+//     }
+
+//     tableimg.style.transform = `translate(${x * 1150}px, 0)`;
+//     arrows[0].style.background = "#3B5D50";
+//     arrows[1].style.background = "#77d4b1";
+// });
+
+// arrows[1].addEventListener("click", () => {
+//     x--;
+//     if (x < -tables.length + 1) {
+//         x = -tables.length + 1;
+//     }
+//     tableimg.style.transform = `translate(${x * 1150}px, 0)`;
+//     arrows[0].style.background = "#77d4b1";
+//     arrows[1].style.background = "#3B5D50";
+
+// });
+
+// window.addEventListener("keydown", (e) => {
+//     if (e.keyCode == 37) {
+//         x++;
+//         if (x > 0) {
+//             x = 0;
+//         }
+
+//         tableimg.style.transform = `translate(${x * 1150}px, 0)`;
+//         arrows[0].style.background = "#3B5D50";
+//         arrows[1].style.background = "#77d4b1";
+//     }
+
+//     if (e.keyCode == 39) {
+//         x--;
+//         if (x < -tables.length + 1) {
+//             x = -tables.length + 1;
+//         }
+
+//         tableimg.style.transform = `translate(${x * 1150}px, 0)`;
+//         arrows[0].style.background = "#77d4b1";
+//         arrows[1].style.background = "#3B5D50";
+//     }
+// });
+// /*******************************table-finish**************************************/
+
+// arrows[0].addEventListener("click", () => {
+//     chx++;
+//     if (chx > 0) {
+//         chx = 0;
+//     }
+
+//     chairsimg.style.transform = `translate(${chx * 1150}px, 0)`;
+//     arrows[0].style.background = "#3B5D50";
+//     arrows[1].style.background = "#77d4b1";
+// });
+
+// arrows[1].addEventListener("click", () => {
+//     chx--;
+//     if (chx < -chairs.length + 1) {
+//         chx = -chairs.length + 1;
+//     }
+//     chairsimg.style.transform = `translate(${chx * 1150}px, 0)`;
+//     arrows[0].style.background = "#77d4b1";
+//     arrows[1].style.background = "#3B5D50";
+// });
+
+// window.addEventListener("keydown", (e) => {
+//     if (e.keyCode == 37) {
+//         chx++;
+//         if(chx > 0){
+//             chx = 0;
+//         }
+
+//         chairsimg.style.transform = `translate(${chx * 1150}px, 0)`;
+//         arrows[0].style.background = "#3B5D50";
+//         arrows[1].style.background = "#77d4b1";
+//     }
+
+//     if(e.keyCode == 39){
+//         chx--;
+//         if(chx < -chairs.length + 1){
+//             chx = -chairs.length + 1;
+//         }
+
+//         chairsimg.style.transform = `translate(${chx * 1150}px, 0)`;
+//         arrows[0].style.background = "#77d4b1";
+//         arrows[1].style.background = "#3B5D50";
+//     }
+// });
+// /*****************************chairs-finish***********************************/
+
+// arrows[0].addEventListener("click", () => {
+//     sx++;
+//     if (sx > 0) {
+//         sx = 0;
+//     }
+
+//     sofaimg.style.transform = `translate(sx * 1150}px, 0)`;
+//     arrows[0].style.background = "#3B5D50";
+//     arrows[1].style.background = "#77d4b1";
+// });
+
+// arrows[1].addEventListener("click", () => {
+//     sx--;
+//     if (sx < -sofas.length + 1) {
+//         sx = -sofas.length + 1;
+//     }
+//     sofaimg.style.transform = `translate(sx * 1150}px, 0)`;
+//     arrows[0].style.background = "#77d4b1";
+//     arrows[1].style.background = "#3B5D50";
+// });
+
+// window.addEventListener("keydown", (e) => {
+//     if (e.keyCode == 37) {
+//         sx++;
+//         if(sx > 0){
+//             sx = 0;
+//         }
+
+//         sofaimg.style.transform = `translate(${sx * 1150}px, 0)`;
+//         arrows[0].style.background = "#3B5D50";
+//         arrows[1].style.background = "#77d4b1";
+//     }
+
+//     if(e.keyCode == 39){
+//         sx--;
+//         if(sx < -sofas.length + 1){
+//             sx = -sofas.length + 1;
+//         }
+
+//         sofaimg.style.transform = `translate(${sx * 1150}px, 0)`;
+//         arrows[0].style.background = "#77d4b1";
+//         arrows[1].style.background = "#3B5D50";
+//     }
+// });
+// /*****************************sofas-finish***********************************/
+
+// arrows[0].addEventListener("click", () => {
+//     bx++;
+//     if (bx > 0) {
+//         bx = 0;
+//     }
+
+//  bedimg.style.transform = `translate(${bx * 1150}px, 0)`;
+//     arrows[0].style.background = "#3B5D50";
+//     arrows[1].style.background = "#77d4b1";
+// });
+
+// arrows[1].addEventListener("click", () => {
+//     bx--;
+//     if (bx < -bed.length + 1) {
+//         bx = -bed.length + 1;
+//     }
+
+//  bedimg.style.transform = `translate(${bx * 1150}px, 0)`;
+//     arrows[0].style.background = "#77d4b1";
+//     arrows[1].style.background = "#3B5D50";
+// });
+
+
+// window.addEventListener("keydown", (e) => {
+//     if (e.keyCode == 37) {
+//         bx++;
+//         if (bx > 0) {
+//             bx = 0;
+//         }
+
+//      bedimg.style.transform = `translate(${bx * 1150}px, 0)`;
+//         arrows[0].style.background = "#3B5D50";
+//         arrows[1].style.background = "#77d4b1";
+//     }
+
+//     if (e.keyCode == 39) {
+//         bx--;
+//         if (bx < -bed.length + 1) {
+//             bx = -bed.length + 1;
+//         }
+
+//      bedimg.style.transform = `translate(${bx * 1150}px, 0)`;
+//         arrows[0].style.background = "#77d4b1";
+//         arrows[1].style.background = "#3B5D50";
+//     }
+// });
+// /***********************************bed-finish**************************************************/
+// arrows[0].addEventListener("click", () => {
+//     mx++;
+//     if (mx > 0) {
+//         mx = 0;
+//     }
+
+//  mattressesimg.style.transform = `translate(${mx * 1150}px, 0)`;
+//     arrows[0].style.background = "#3B5D50";
+//     arrows[1].style.background = "#77d4b1";
+// });
+
+// arrows[1].addEventListener("click", () => {
+//     mx--;
+//     if (mx < -mattresses.length + 1) {
+//         mx = -mattresses.length + 1;
+//     }
+
+//  mattressesimg.style.transform = `translate(${mx * 1150}px, 0)`;
+//     arrows[0].style.background = "#77d4b1";
+//     arrows[1].style.background = "#3B5D50";
+// });
+
+
+// window.addEventListener("keydown", (e) => {
+//     if (e.keyCode == 37) {
+//         mx++;
+//         if (mx > 0) {
+//             mx = 0;
+//         }
+
+//      mattressesimg.style.transform = `translate(${mx * 1150}px, 0)`;
+//         arrows[0].style.background = "#3B5D50";
+//         arrows[1].style.background = "#77d4b1";
+//     }
+
+//     if (e.keyCode == 39) {
+//         mx--;
+//         if (mx < -mattresses.length + 1) {
+//             mx = -mattresses.length + 1;
+//         }
+
+//      mattressesimg.style.transform = `translate(${mx * 1150}px, 0)`;
+//         arrows[0].style.background = "#77d4b1";
+//         arrows[1].style.background = "#3B5D50";
+//     }
+// });
+// /************************************mattresses-finish*************************************************/
+// arrows[0].addEventListener("click", () => {
+//     lx++;
+//     if (lx > 0) {
+//         lx = 0;
+//     }
+
+//     lampsimg.style.transform = `translate(${lx * 1150}px, 0)`;
+//     arrows[0].style.background = "#3B5D50";
+//     arrows[1].style.background = "#77d4b1";
+// });
+
+// arrows[1].addEventListener("click", () => {
+//     lx--;
+//     if (lx < -lamps.length + 1) {
+//         lx = -lamps.length + 1;
+//     }
+
+//     lampsimg.style.transform = `translate(${lx * 1150}px, 0)`;
+//     arrows[0].style.background = "#77d4b1";
+//     arrows[1].style.background = "#3B5D50";
+// });
+
+
+// window.addEventListener("keydown", (e) => {
+//     if (e.keyCode == 37) {
+//         lx++;
+//         if (lx > 0) {
+//             lx = 0;
+//         }
+
+//         lampsimg.style.transform = `translate(${lx * 1150}px, 0)`;
+//         arrows[0].style.background = "#3B5D50";
+//         arrows[1].style.background = "#77d4b1";
+//     }
+
+//     if (e.keyCode == 39) {
+//         lx--;
+//         if (lx < -lamps.length + 1) {
+//             lx = -lamps.length + 1;
+//         }
+
+//         lampsimg.style.transform = `translate(${lx * 1150}px, 0)`;
+//         arrows[0].style.background = "#77d4b1";
+//         arrows[1].style.background = "#3B5D50";
+//     }
+// });
+// /************************************lamps-finish*************************************************/
+// arrows[0].addEventListener("click", () => {
+//     ax++;
+//     if (ax > 0) {
+//         ax = 0;
+//     }
+
+//     armchairsimg.style.transform = `translate(${ax * 1150}px, 0)`;
+//     arrows[0].style.background = "#3B5D50";
+//     arrows[1].style.background = "#77d4b1";
+// });
+
+// arrows[1].addEventListener("click", () => {
+//     ax--;
+//     if (ax < -armchairs.length + 1) {
+//         ax = -armchairs.length + 1;
+//     }
+
+//     armchairsimg.style.transform = `translate(${ax * 1150}px, 0)`;
+//     arrows[0].style.background = "#77d4b1";
+//     arrows[1].style.background = "#3B5D50";
+// });
+
+
+// window.addEventListener("keydown", (e) => {
+//     if (e.keyCode == 37) {
+//         ax++;
+//         if (ax > 0) {
+//             ax = 0;
+//         }
+
+//         armchairsimg.style.transform = `translate(${ax * 1150}px, 0)`;
+//         arrows[0].style.background = "#3B5D50";
+//         arrows[1].style.background = "#77d4b1";
+//     }
+
+//     if (e.keyCode == 39) {
+//         ax--;
+//         if (ax < -armchairs.length + 1) {
+//             ax = -armchairs.length + 1;
+//         }
+
+//         armchairsimg.style.transform = `translate(${ax * 1150}px, 0)`;
+//         arrows[0].style.background = "#77d4b1";
+//         arrows[1].style.background = "#3B5D50";
+//     }
+// });
+// /************************************armchairs-finish*************************************************/
+// arrows[0].addEventListener("click", () => {
+//     kx++;
+//     if (kx > 0) {
+//         kx = 0;
+//     }
+
+//     kitchensimg.style.transform = `translate(${kx * 1150}px, 0)`;
+//     arrows[0].style.background = "#3B5D50";
+//     arrows[1].style.background = "#77d4b1";
+// });
+
+// arrows[1].addEventListener("click", () => {
+//     kx--;
+//     if (kx < -kitchens.length + 1) {
+//         kx = -kitchens.length + 1;
+//     }
+
+//     kitchensimg.style.transform = `translate(${kx * 1150}px, 0)`;
+//     arrows[0].style.background = "#77d4b1";
+//     arrows[1].style.background = "#3B5D50";
+// });
+
+
+// window.addEventListener("keydown", (e) => {
+//     if (e.keyCode == 37) {
+//         kx++;
+//         if (kx > 0) {
+//             kx = 0;
+//         }
+
+//         kitchensimg.style.transform = `translate(${kx * 1150}px, 0)`;
+//         arrows[0].style.background = "#3B5D50";
+//         arrows[1].style.background = "#77d4b1";
+//     }
+
+//     if (e.keyCode == 39) {
+//         kx--;
+//         if (kx < -kitchens.length + 1) {
+//             kx = -kitchens.length + 1;
+//         }
+
+//         kitchensimg.style.transform = `translate(${kx * 1150}px, 0)`;
+//         arrows[0].style.background = "#77d4b1";
+//         arrows[1].style.background = "#3B5D50";
+//     }
+// });
+// /************************************kitchens-finish*************************************************/
+// arrows[0].addEventListener("click", () => {
+//     cx++;
+//     if (cx > 0) {
+//         cx = 0;
+//     }
+
+//     cabinetsimg.style.transform = `translate(${cx * 1150}px, 0)`;
+//     arrows[0].style.background = "#3B5D50";
+//     arrows[1].style.background = "#77d4b1";
+// });
+
+// arrows[1].addEventListener("click", () => {
+//     cx--;
+//     if (cx < -cabinets.length + 1) {
+//         cx = -cabinets.length + 1;
+//     }
+
+//     cabinetsimg.style.transform = `translate(${cx * 1150}px, 0)`;
+//     arrows[0].style.background = "#77d4b1";
+//     arrows[1].style.background = "#3B5D50";
+// });
+
+
+// window.addEventListener("keydown", (e) => {
+//     if (e.keyCode == 37) {
+//         cx++;
+//         if (cx > 0) {
+//             cx = 0;
+//         }
+
+//         cabinetsimg.style.transform = `translate(${cx * 1150}px, 0)`;
+//         arrows[0].style.background = "#3B5D50";
+//         arrows[1].style.background = "#77d4b1";
+//     }
+
+//     if (e.keyCode == 39) {
+//         cx--;
+//         if (cx < -cabinets.length + 1) {
+//             cx = -cabinets.length + 1;
+//         }
+
+//         cabinetsimg.style.transform = `translate(${cx * 1150}px, 0)`;
+//         arrows[0].style.background = "#77d4b1";
+//         arrows[1].style.background = "#3B5D50";
+//     }
+// });
+// /************************************cabinets-finish*************************************************/
+// arrows[0].addEventListener("click", () => {
+//     mix++;
+//     if (mix > 0) {
+//         mix = 0;
+//     }
+
+//     mirrorsimg.style.transform = `translate(${mix * 1150}px, 0)`;
+//     arrows[0].style.background = "#3B5D50";
+//     arrows[1].style.background = "#77d4b1";
+// });
+
+// arrows[1].addEventListener("click", () => {
+//     mix--;
+//     if (mix < -mirrors.length + 1) {
+//         mix = -mirrors.length + 1;
+//     }
+
+//     mirrorsimg.style.transform = `translate(${mix * 1150}px, 0)`;
+//     arrows[0].style.background = "#77d4b1";
+//     arrows[1].style.background = "#3B5D50";
+// });
+
+
+// window.addEventListener("keydown", (e) => {
+//     if (e.keyCode == 37) {
+//         mix++;
+//         if (mix > 0) {
+//             mix = 0;
+//         }
+
+//         mirrorsimg.style.transform = `translate(${mix * 1150}px, 0)`;
+//         arrows[0].style.background = "#3B5D50";
+//         arrows[1].style.background = "#77d4b1";
+//     }
+
+//     if (e.keyCode == 39) {
+//         mix--;
+//         if (mix < -mirrors.length + 1) {
+//             mix = -mirrors.length + 1;
+//         }
+
+//         mirrorsimg.style.transform = `translate(${mix * 1150}px, 0)`;
+//         arrows[0].style.background = "#77d4b1";
+//         arrows[1].style.background = "#3B5D50";
+//     }
+// });
+// /************************************mirrors-finish*************************************************/
+// arrows[0].addEventListener("click", () => {
+//     tx++;
+//     if (tx > 0) {
+//         tx = 0;
+//     }
+
+//     tumbyimg.style.transform = `translate(${tx * 1150}px, 0)`;
+//     arrows[0].style.background = "#3B5D50";
+//     arrows[1].style.background = "#77d4b1";
+// });
+
+// arrows[1].addEventListener("click", () => {
+//     tx--;
+//     if (tx < -tumby.length + 1) {
+//         tx = -tumby.length + 1;
+//     }
+
+//     tumbyimg.style.transform = `translate(${tx * 1150}px, 0)`;
+//     arrows[0].style.background = "#77d4b1";
+//     arrows[1].style.background = "#3B5D50";
+// });
+
+
+// window.addEventListener("keydown", (e) => {
+//     if (e.keyCode == 37) {
+//         tx++;
+//         if (tx > 0) {
+//             tx = 0;
+//         }
+
+//         tumbyimg.style.transform = `translate(${tx * 1150}px, 0)`;
+//         arrows[0].style.background = "#3B5D50";
+//         arrows[1].style.background = "#77d4b1";
+//     }
+
+//     if (e.keyCode == 39) {
+//         tx--;
+//         if (tx < -tumby.length + 1) {
+//             tx = -tumby.length + 1;
+//         }
+
+//         tumbyimg.style.transform = `translate(${tx * 1150}px, 0)`;
+//         arrows[0].style.background = "#77d4b1";
+//         arrows[1].style.background = "#3B5D50";
+//     }
+// });
+// /**********************************tumby-finish***************************************************/
+// arrows[0].addEventListener("click", () => {
+//     hx++;
+//     if (hx > 0) {
+//         hx = 0;
+//     }
+
+//     hangersimg.style.transform = `translate(${hx * 1150}px, 0)`;
+//     arrows[0].style.background = "#3B5D50";
+//     arrows[1].style.background = "#77d4b1";
+// });
+
+// arrows[1].addEventListener("click", () => {
+//     hx--;
+//     if (hx < -hangers.length + 1) {
+//         hx = -hangers.length + 1;
+//     }
+
+//     hangersimg.style.transform = `translate(${hx * 1150}px, 0)`;
+//     arrows[0].style.background = "#77d4b1";
+//     arrows[1].style.background = "#3B5D50";
+// });
+
+
+// window.addEventListener("keydown", (e) => {
+//     if (e.keyCode == 37) {
+//         hx++;
+//         if (hx > 0) {
+//             hx = 0;
+//         }
+
+//         hangersimg.style.transform = `translate(${hx * 1150}px, 0)`;
+//         arrows[0].style.background = "#3B5D50";
+//         arrows[1].style.background = "#77d4b1";
+//     }
+
+//     if (e.keyCode == 39) {
+//         hx--;
+//         if (hx < -hangers.length + 1) {
+//             hx = -hangers.length + 1;
+//         }
+
+//         hangersimg.style.transform = `translate(${hx * 1150}px, 0)`;
+//         arrows[0].style.background = "#77d4b1";
+//         arrows[1].style.background = "#3B5D50";
+//     }
+// });
 /**********************************hangerss-finish****************************************/
