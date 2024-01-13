@@ -180,6 +180,10 @@ header nav ul a {
     line-height: 28px;
 }
 
+.slick-carousel{
+    width: 1150px;
+}
+
 @media (max-width: 600px) {
     header {
         width: 100%;
@@ -440,7 +444,7 @@ header nav ul a {
     background-color: #D2D2D2;
 }
 
-.blog-tables {
+/* .blog-tables {
     width: 1150px;
     display: flex;
     flex-direction: column;
@@ -679,9 +683,16 @@ header nav ul a {
     overflow: hidden;
     justify-content: center;
     gap: 20px;
+} */
+
+#blog-tables{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
 }
 
-.blog-hangers h1 {
+.blog-title {
     text-align: center;
     width: 100%;
     color: #2F2F2F;
@@ -692,37 +703,97 @@ header nav ul a {
     line-height: 41px;
 }
 
-.tables-images {
-    min-width: 200%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    transition: all 0.5s;
-    /* border: 1px solid red; */
-}
-
-.tables {
-    width: 1150px;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto auto auto;
-    gap: 20px;
-}
-
 
 .tables img {
-    width: 500px;
+    width: 1150px;
     border: 1px solid red;
     height: 500px;
+    margin-bottom: 20px;
 }
 
-.arrows {
+#blog-chairs{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+#blog-sofas{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+#blog-bed{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+#blog-mattresses{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+#blog-lamps{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+#blog-armchairs{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+#blog-kitchens{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+#blog-cabinets{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+#blog-mirrors{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+#blog-tumby{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+#blog-hangers{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+/* .arrows {
     display: flex;
     align-items: center;
     gap: 100px;
-}
+} */
 
-.arrows button {
+/* .arrows button {
     padding: 10px 15px;
     border-radius: 50%;
     border: none;
@@ -734,7 +805,7 @@ header nav ul a {
 .arrows button:hover {
     background-color: #3B5D50;
     color: #D2D2D2;
-}
+} */
 
 @media(max-width: 600px) {
     .blog {
@@ -768,114 +839,134 @@ header nav ul a {
     }
 
 
-    .blog-tables {
+    #blog-tables{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        overflow: hidden;
+    }
+    
+    .slick-carousel{
         width: 330px;
     }
 
-    .blog-tables h1 {
+    .blog-title {
         font-size: 26px;
     }
-
-    .blog-chairs {
+    
+    
+    .tables img {
         width: 330px;
     }
-
-    .blog-chairs h1 {
-        font-size: 26px;
-    }
-
-    .blog-sofas {
+    
+    #blog-chairs{
         width: 330px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        overflow: hidden;
     }
-
-    .blog-sofas h1 {
-        font-size: 26px;
-    }
-
-    .blog-bed {
+    
+    #blog-sofas{
         width: 330px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        gap: 50px;
     }
-
-    .blog-bed h1 {
-        font-size: 26px;
-    }
-
-    .blog-mattresses {
+    
+    #blog-bed{
         width: 330px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        gap: 50px;
     }
-
-    .blog-mattresses h1 {
-        font-size: 26px;
-    }
-
-    .blog-lamps {
+    
+    #blog-mattresses{
         width: 330px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        gap: 50px;
     }
-
-    .blog-lamps h1 {
-        font-size: 26px;
-    }
-
-    .blog-armchairs {
+    
+    #blog-lamps{
         width: 330px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        gap: 50px;
     }
-
-    .blog-armchairs h1 {
-        font-size: 26px;
-    }
-
-    .blog-kitchens {
+    
+    #blog-armchairs{
         width: 330px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        gap: 50px;
     }
-
-    .blog-kitchens h1 {
-        font-size: 26px;
-    }
-
-    .blog-cabinets {
+    
+    #blog-kitchens{
         width: 330px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        gap: 50px;
     }
-
-    .blog-cabinets h1 {
-        font-size: 26px;
-    }
-
-    .blog-mirrors {
+    
+    #blog-cabinets{
         width: 330px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        gap: 50px;
     }
-
-    .blog-mirrors h1 {
-        font-size: 26px;
-    }
-
-    .blog-tumby {
+    
+    #blog-mirrors{
         width: 330px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        gap: 50px;
     }
-
-    .blog-tumby h1 {
-        font-size: 26px;
-    }
-
-    .blog-hangers {
+    
+    #blog-tumby{
         width: 330px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        gap: 50px;
     }
-
-    .blog-hangers h1 {
-        font-size: 26px;
+    
+    #blog-hangers{
+        width: 330px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        gap: 50px;
     }
-
     .tables {
         width: 330px;
+        align-items: center;
         justify-content: center;
     }
 
-    .tables img {
-        width: 145px;
-        border: 1px solid red;
-        height: 145px;
-    }
-
-    .arrows {
+    /* .arrows {
         display: flex;
         align-items: center;
         gap: 50px;
@@ -885,5 +976,5 @@ header nav ul a {
         padding: 5px 10px;
         transform: translate(0px, 0);
 
-    }
+    } */
 }
