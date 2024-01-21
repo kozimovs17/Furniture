@@ -160,9 +160,12 @@ form.addEventListener("submit", (e) =>{
     e.preventDefault();
 
     checkInputs();  
-    sendEmail();
-    form.reset();
-    return false;
+
+    if(!Name.classList.contains("error") && !lastname.classList.contains("error") && !email.classList.contains("error") && !number.classList.contains("error") && !message.classList.contains("error")){
+        sendEmail();
+        form.reset();
+        return false;
+    }
 })
 
 
