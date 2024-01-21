@@ -862,6 +862,7 @@ header .header-item .back {
   height: 28px;
   border-radius: 50%;
   background-color: #3B5D50;
+  cursor: pointer;
 }
 
 .services-card-frame3 .color2 {
@@ -869,12 +870,14 @@ header .header-item .back {
   height: 28px;
   border-radius: 50%;
   background-color: #2F2F2F;
+  cursor: pointer;
 }
 
 .services-card-frame3 .color3 {
   width: 28px;
   height: 28px;
   border-radius: 50%;
+  cursor: pointer;
   background-color: #6A6A6A;
 }
 
@@ -883,6 +886,7 @@ header .header-item .back {
   height: 28px;
   border-radius: 50%;
   border: 1px solid black;
+  cursor: pointer;
   background-color: #fff;
 }
 
@@ -903,6 +907,7 @@ header .header-item .back {
   background: #040404;
   padding: 8px 26px;
   border: none;
+  cursor: pointer;
 }
 
 .arrows {
