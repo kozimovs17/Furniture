@@ -88,14 +88,15 @@ let lastname = document.getElementById("lastname");
 let email = document.getElementById("email");
 let number = document.getElementById("number");
 let message = document.getElementById("message");
-let subject = document.getElementById("subject");
+let subjectid = document.getElementById("subject");
 let data = JSON.parse(localStorage.getItem("key")) ? JSON.parse(localStorage.getItem("key")) : [];
 let tbody = document.querySelector("tbody");
 let counts = document.querySelectorAll(".info-inps");
 
 function sendEmail() {
     let bodyMessage = `Name: ${Name.value}<br> LastName: ${lastname.value}<br> Email: ${email.value}<br> Number: ${number.value}<br> Message: ${message.value}<br>` 
-
+    let subject = `Subject: ${subjectid.value}`
+    
     Email.send({
         // SecureToken : "b55af08e-69d7-46c7-8bda-e4cd4db22116",
         Host : "smtp.elasticemail.com",
@@ -103,7 +104,7 @@ function sendEmail() {
         Password : "15B10F19A77678EB8BFDD2E141E193540FB4",
         To : 'kozimovs17@gmail.com',
         From : "kozimovs17@gmail.com",
-        Subject : "This is the subject",
+        Subject : subject,
         Body : bodyMessage
     }).then(
       message => {
